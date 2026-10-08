@@ -1,0 +1,25 @@
+Project Statement:
+Build a comprehensive application for electric vehicle (EV) fleet management to help fleet managers
+efficiently monitor and manage their EVs. The system will track real-time vehicle performance,
+battery health, charging status, and driver behavior. It will also provide route optimization, vehicle
+maintenance alerts, and cost analysis based on energy consumption. The application will include
+user authentication and report generation features.
+Outcomes
+The Real-Time EV Fleet Monitoring and Predictive Analytics Solution will enable fleet managers to
+monitor their electric vehicles' performance and health in real-time. This includes tracking battery
+status, charging levels and optimizing fleet operations. This reduces operational costs and ensures
+vehicles are maintained proactively, enhancing overall fleet efficiency. The system will offer
+comprehensive cost and energy consumption analysis, along with customizable report generation.
+Modules to be Implemented:
+
+Implement user registration and login with email verification.
+
+Define roles for fleet managers and drivers.
+
+Allow registration of EVs with details such as make, model, battery capacity, and service history.
+
+Monitor real-time data including location, speed, battery status, and charging status.
+
+Implement monitoring to alert fleet managers when battery health degrades or requires charging.
+
+Analyze driver behavior (e.g., speed, braking, acceleration) and its impact on energy consumption.

@@ -1,0 +1,1691 @@
+[
+  {
+    "slide": 1,
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE (1)",
+        "left": 457200,
+        "top": 1371600,
+        "width": 11274552,
+        "height": 36576,
+        "texts": []
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 1508760,
+        "width": 11274552,
+        "height": 1200329,
+        "texts": [
+          {
+            "text": "Dynamic Portfolio Rebalancing using Reinforcement Learning",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "AUTO_SHAPE (1)",
+        "left": 457200,
+        "top": 3154680,
+        "width": 11274552,
+        "height": 36576,
+        "texts": []
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 548640,
+        "top": 3364992,
+        "width": 5486400,
+        "height": 323165,
+        "texts": [
+          {
+            "text": "IV Year / VII Sem / A Sec",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 548640,
+        "top": 3767328,
+        "width": 5486400,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "TEAM MEMBERS:",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 548640,
+        "top": 4187952,
+        "width": 5486400,
+        "height": 307777,
+        "texts": [
+          {
+            "text": "RUJULA B  -  23UCS134",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 548640,
+        "top": 4690872,
+        "width": 5486400,
+        "height": 307777,
+        "texts": [
+          {
+            "text": "SUSHMITHAA S -  23UCS158",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 548640,
+        "top": 5193792,
+        "width": 5486400,
+        "height": 307777,
+        "texts": [
+          {
+            "text": "VINMOUGIL M V -  23UCS168",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 6611112,
+        "top": 3493008,
+        "width": 5029200,
+        "height": 347472,
+        "texts": [
+          {
+            "text": "PROJECT GUIDE:",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 6611112,
+        "top": 3950208,
+        "width": 5029200,
+        "height": 307777,
+        "texts": [
+          {
+            "text": "Mr. S. KUMARAKRISHNAN",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 6611112,
+        "top": 4425696,
+        "width": 5029200,
+        "height": 307777,
+        "texts": [
+          {
+            "text": "Associate Professor",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 6611112,
+        "top": 4901184,
+        "width": 5029200,
+        "height": 307777,
+        "texts": [
+          {
+            "text": "Department Of Computer Science And Engineering",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "PICTURE (13)",
+        "left": 457201,
+        "top": 27900,
+        "width": 11274552,
+        "height": 1285717
+      }
+    ]
+  },
+  {
+    "slide": 2,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Objectives",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 960120,
+        "width": 11274552,
+        "height": 4780796,
+        "texts": [
+          {
+            "text": "❖To build Dynamic Portfolio Rebalancing using Reinforcement Learning - an intelligent web-based portfolio management platform integrating Reinforcement Learning (PPO) and the classical Merton model for dynamic asset allocation.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "❖To train a Proximal Policy Optimization (PPO) agent on a 13-feature market state space with a Softmax-constrained 3-asset action space (NIFTY 50, NASDAQ-100, Cash).",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "❖To implement a multi-objective reward function combining portfolio return, Sharpe ratio, drawdown penalty, and transaction cost efficiency for robust, risk-aware learning.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "❖To provide an interactive web dashboard with live market charts, volatility regime indicators, and real-time KPI cards for side-by-side strategy comparison.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "❖To enable user-configurable parameter tuning of risk aversion γ, transaction cost rate, and risk-free rate with instant re-evaluation and strategy comparison.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 3,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Literature Survey",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TABLE (19)",
+        "left": 578023,
+        "top": 1264920,
+        "width": 11032778,
+        "height": 5486400,
+        "table": [
+          [
+            "S NO",
+            "TITLE",
+            "AUTHOR/YEAR/PUBLISHER",
+            "METHODOLOGY",
+            "ADVANTAGES",
+            "DISADVANTAGES"
+          ],
+          [
+            "1.",
+            "Deep Reinforcement Learning for Portfolio Optimisation",
+            "Jiang et al., 2017, NIPS Workshop on ML for Finance",
+            "CNN + RNN policy network with continuous portfolio rebalancing",
+            "First to demonstrate RL outperforming buy-and-hold on equity data end-to-end.",
+            "Ignores transaction costs; assumes zero market impact."
+          ],
+          [
+            "2.",
+            "PPO, SAC and DDPG for Financial Portfolio Management",
+            "Zhang & Liu, 2022, IEEE Trans. Neural Networks",
+            "Benchmark of PPO, SAC, DDPG on S&P 500 with Sharpe-based rewards",
+            "Reveals PPO stability advantage over off-policy methods in non-stationary markets.",
+            "Uses only US equities; NIFTY+NASDAQ cross-market scope unexplored."
+          ],
+          [
+            "3.",
+            "Dynamic Portfolio Rebalancing through Reinforcement Learning",
+            "Yang, Lim, Cao & Quek, 2021, Springer (Published online 27 Dec 2021)",
+            "RL-based dynamic rebalancing with transaction cost-aware reward; benchmarked against static strategies",
+            "Demonstrates adaptive rebalancing frequency; significantly reduces unnecessary trades.",
+            "Model evaluated only on select US equities; emerging market generalization not tested."
+          ],
+          [
+            "4.",
+            "Option Pricing When Underlying Stock Returns Are Discontinuous",
+            "Robert C. Merton, 1976, Journal of Financial Economics",
+            "Jump-diffusion stochastic process model for asset return dynamics",
+            "Extends Black-Scholes to handle sudden price jumps; foundational model for financial engineering.",
+            "Assumes known jump intensity and size distribution; hard to calibrate on real-time data."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 4,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Literature Survey",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TABLE (19)",
+        "left": 519030,
+        "top": 1343578,
+        "width": 11150763,
+        "height": 5149645,
+        "table": [
+          [
+            "S NO",
+            "TITLE",
+            "AUTHOR/YEAR/PUBLISHER",
+            "METHODOLOGY",
+            "ADVANTAGES",
+            "DISADVANTAGES"
+          ],
+          [
+            "5.",
+            "Merton's Intertemporal CAPM and the Cross-Section of Returns",
+            "Campbell & Vuolteenaho, 2004, American Economic Review",
+            "HJB continuous-time solution; closed-form Merton optimal portfolio weights with CRRA utility",
+            "Tractable closed-form weights serve as the interpretable classical benchmark for RL comparison.",
+            "Assumes constant μ and σ; ignores volatility regime changes and transaction costs."
+          ],
+          [
+            "6.",
+            "Reward Shaping for Risk-Adjusted Portfolio Optimisation",
+            "Wang et al., 2023, Journal of Financial Data Science",
+            "Multi-objective PPO reward: return + α·Sharpe − λ₁·Drawdown − λ₂·Turnover",
+            "Reward shaping significantly reduces max drawdown without sacrificing annual returns.",
+            "Hyperparameters (α, λ₁, λ₂) require extensive grid search."
+          ],
+          [
+            "7.",
+            "Transaction Cost-Aware Portfolio Rebalancing via RL",
+            "Park & Kim, 2023, Quantitative Finance",
+            "PPO with proportional transaction cost embedded in environment step",
+            "RL adapts rebalancing frequency dynamically to minimise total transaction drag.",
+            "Performance degrades under high-frequency microstructure noise."
+          ],
+          [
+            "8.",
+            "Volatility Regime Detection with HMMs for Asset Allocation",
+            "Nystrup et al., 2020, European Journal of Operational Research",
+            "HMM regime switching + Markowitz optimisation per detected regime",
+            "Regime-conditioned allocation significantly reduces drawdowns during crises.",
+            "Online HMM updating introduces parameter instability."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 5,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Literature Survey",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TABLE (19)",
+        "left": 578023,
+        "top": 1358917,
+        "width": 11032778,
+        "height": 3567045,
+        "table": [
+          [
+            "S NO",
+            "TITLE",
+            "AUTHOR/YEAR/\nPUBLISHER",
+            "METHODOLOGY",
+            "ADVANTAGES",
+            "DISADVANTAGES"
+          ],
+          [
+            "9.",
+            "Explainability in Deep RL Portfolio Agents Using SHAP",
+            "Chen & Park, 2024, Expert Systems with Applications",
+            "SHAP TreeExplainer applied to RL policy outputs; feature attribution per step",
+            "Quantifies which market features (Vol20, Drawdown) most influence AI allocation.",
+            "SHAP on deep policies is computationally expensive per inference step."
+          ],
+          [
+            "10.",
+            "Live Market Data Integration for AI-Driven Portfolio Systems",
+            "Mehta & Gupta, 2023, Springer Journal of Intelligent Systems",
+            "yfinance API pipeline with feature engineering feeding online RL agent",
+            "Demonstrates end-to-end live deployment of RL portfolio agent with minimal latency.",
+            "yfinance NIFTY data may have gaps for older dates, requiring imputation."
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 6,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Problem Identification",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 987552,
+        "width": 11274552,
+        "height": 4293483,
+        "texts": [
+          {
+            "text": "❖Existing portfolio systems rely on static rule-based models such as Merton that assume constant market parameters, failing to adapt to volatile or crisis regimes.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "❖Classical strategies have no mechanism to learn from market experience - they recompute weights with fixed formulae regardless of evolving market conditions.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "❖Most research tools are Python scripts inaccessible to non-technical investors; there is no interactive interface for parameter exploration or real-time strategy comparison.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "❖There is no unified platform for side-by-side comparison of AI-driven (RL) and classical portfolio strategies with live market data and performance metrics.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "❖Current RL systems lack explainability and investor trust - investors cannot understand why the AI chose a specific allocation, reducing real-world adoption.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 7,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Proposed System & Modules",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 960120,
+        "width": 11274552,
+        "height": 2554545,
+        "texts": [
+          {
+            "text": "Platform Type: Full-stack, intelligent portfolio management platform named Dynamic Portfolio Rebalancing using Reinforcement Learning.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "Core Function: Enables investors to simulate, backtest, and visualise AI-driven Reinforcement Learning (PPO) strategies versus the classical Merton model.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "Market Data Used: Live NIFTY 50 & NASDAQ-100 market data.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "Primary Objective: Bridges the gap between academic research and practical finance.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "Platform Features: Interactive web dashboard, secure authentication, live data integration, and configurable strategy parameters.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 3514665,
+        "width": 4572000,
+        "height": 384048,
+        "texts": [
+          {
+            "text": "PROJECT MODULES",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457073,
+        "top": 3657600,
+        "width": 11274552,
+        "height": 3200400,
+        "texts": [
+          {
+            "text": "•  Module 1 : Interactive Web Dashboard",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Module 2 : User Login & Authentication",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Module 3 : Live Market Data Integration",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Module 4 : RL Working Process",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Module 5 : Portfolio Tracker",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Module 6 : Strategy Parameter Tuning Panel",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 8,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Module 1 : Interactive Web Dashboard",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "AUTO_SHAPE (1)",
+        "left": 457200,
+        "top": 941832,
+        "width": 11274552,
+        "height": 27432,
+        "texts": []
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 1024128,
+        "width": 11274552,
+        "height": 1585049,
+        "texts": [
+          {
+            "text": "The Interactive Web Dashboard is the public-facing entry point of Dynamic Portfolio Rebalancing using Reinforcement Learning.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "It replaces all static .png charts with a fully live, browser-based analytical environment where users can explore NIFTY 50 and NASDAQ-100 market data, monitor volatility conditions, and compare RL vs Merton portfolio performance in real time without touching any Python code.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2578608,
+        "width": 4572000,
+        "height": 347472,
+        "texts": [
+          {
+            "text": "Key Features:",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2980944,
+        "width": 11274552,
+        "height": 2739211,
+        "texts": [
+          {
+            "text": "•  Live Plotly charts display NIFTY 50 & NASDAQ-100 price history with EMA 20 and EMA 60 trend overlays; all charts are zoomable, pannable, and hoverable.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Volatility Regime Badge dynamically updates to 'Normal' or '⚠ HIGH STRESS' based on whether the 20-day volatility exceeds the 60-day rolling average for either index.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  KPI metric cards display live values for Sharpe Ratio, Maximum Drawdown, and Annualised Return for both RL and Merton strategies — updated on every data refresh.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Underwater Drawdown Chart visualises capital loss from peak over time, allowing investors to compare crisis resilience of the RL agent vs. the classical Merton model.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457073,
+        "top": 5737263,
+        "width": 11091672,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "⚙ Tech Stack:  Streamlit / Flask  |  Plotly (interactive charts)  |  yfinance (live data feed)  |  Pandas",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 9,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Module 2 : User Login & Authentication",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "AUTO_SHAPE (1)",
+        "left": 457200,
+        "top": 941832,
+        "width": 11274552,
+        "height": 27432,
+        "texts": []
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 1024128,
+        "width": 11274552,
+        "height": 1554272,
+        "texts": [
+          {
+            "text": "The User Login & Authentication module provides a secure identity layer that gates access to personalised portfolio features.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "Only authenticated users can access the Portfolio Tracker and Parameter Tuning Panel.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "The system uses industry-standard cryptographic practices to ensure that user credentials and session data are protected at all times.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2578608,
+        "width": 4572000,
+        "height": 347472,
+        "texts": [
+          {
+            "text": "Key Features:",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2980944,
+        "width": 11274552,
+        "height": 2739211,
+        "texts": [
+          {
+            "text": "•  Registration flow collects username, email, and password; passwords are hashed using bcrypt with adaptive salt rounds before being stored in the database.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Login flow verifies the submitted password against the stored bcrypt hash; on success, a signed JSON Web Token (JWT) is issued with a configurable expiry window.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  All protected API routes validate the JWT on every request; expired or tampered tokens are rejected with a 401 Unauthorized response, forcing re-authentication.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Session management routes the authenticated user to their dedicated Portfolio Tracker workspace, resolving their account record and personal NAV history from the database.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457073,
+        "top": 5713469,
+        "width": 11091672,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "⚙ Tech Stack:  Flask / FastAPI (backend)  |  bcrypt (password hashing)  |  JWT (session tokens)  |  SQLite / PostgreSQL",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 10,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Module 3 : Live Market Data Integration",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "AUTO_SHAPE (1)",
+        "left": 457200,
+        "top": 941832,
+        "width": 11274552,
+        "height": 27432,
+        "texts": []
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 1024128,
+        "width": 11274552,
+        "height": 1554272,
+        "texts": [
+          {
+            "text": "The Live Market Data Integration module replaces the static Excel input file with a fully automated, real-time data pipeline.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "On every session or scheduled refresh, the system fetches the latest daily closing prices for NIFTY 50 and NASDAQ-100, computes all 13 RL state features in-memory, and passes the updated state vector directly to the PPO agent - eliminating any manual data collection or Excel maintenance.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2578608,
+        "width": 4572000,
+        "height": 347472,
+        "texts": [
+          {
+            "text": "Key Features:",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2980944,
+        "width": 11274552,
+        "height": 2739211,
+        "texts": [
+          {
+            "text": "•  yfinance API pulls daily OHLCV data for ^NSEI (NIFTY 50) and ^NDX (NASDAQ-100); historical data from a configurable lookback window (default: 2 years) is downloaded automatically.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  All 13 RL state features are computed in-memory using Pandas: log returns, 20-day & 60-day rolling volatility, drawdown from running max, rolling Sharpe ratio, and volatility regime flag.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  The live RL state vector is fed to the trained PPO model, which outputs 'Today’s Recommended Allocation' (% NASDAQ, % NIFTY, % Cash) displayed on the dashboard.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  A data quality validation step detects gaps or NaN values in the live feed and applies forward-fill imputation to ensure continuous, uninterrupted model inference.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457073,
+        "top": 5720155,
+        "width": 11091672,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "⚙ Tech Stack:  yfinance (market data API)  |  Pandas (feature engineering)  |  NumPy  |  APScheduler (scheduled refresh)",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 11,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Module 4 : RL Working Process",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "AUTO_SHAPE (1)",
+        "left": 457200,
+        "top": 941832,
+        "width": 11274552,
+        "height": 27432,
+        "texts": []
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 1024128,
+        "width": 11274552,
+        "height": 1877437,
+        "texts": [
+          {
+            "text": "The RL Working Process module is the core intelligence engine of Dynamic Portfolio Rebalancing using Reinforcement Learning",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "A Proximal Policy Optimization (PPO) agent is trained on historical NIFTY 50 & NASDAQ-100 data using a custom Gymnasium environment.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "The agent learns to dynamically allocate portfolio weights across three assets by maximising a multi-objective reward that balances return, risk-adjusted performance, downside protection, and transaction cost efficiency.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2861917,
+        "width": 4572000,
+        "height": 347472,
+        "texts": [
+          {
+            "text": "Key Features:",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 3334905,
+        "width": 11274552,
+        "height": 2739211,
+        "texts": [
+          {
+            "text": "•  State Space (13 features): Log Returns, Vol20, Vol60, Drawdown, Volatility Regime, Rolling 60-day Return, and Rolling Sharpe Ratio - computed separately for both NIFTY and NASDAQ.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Action Space: 3 raw logits from the PPO MLP [256 -128 - 64] pass through Softmax to produce non-negative portfolio weights summing to 1: (w_NASDAQ, w_NIFTY, w_Cash).",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Multi-objective Reward:  r_portfolio + α·Sharpe − λ₁·|Drawdown| − λ₂·Turnover (α=0.5, λ₁=2.0, λ₂=0.1); transaction cost of 0.1% deducted on every rebalancing step.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Training: 100,000 PPO timesteps with learning rate 3×10⁻⁴, n_steps=2048, batch_size=64, γ=0.99; model weights saved and loaded for live inference without retraining.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457073,
+        "top": 6039612,
+        "width": 11091672,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "⚙ Tech Stack:  Stable-Baselines3 (PPO)  |  Gymnasium (custom PortfolioEnv)  |  PyTorch (neural network backend)",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 12,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Module 5 : Portfolio Tracker",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "AUTO_SHAPE (1)",
+        "left": 457200,
+        "top": 941832,
+        "width": 11274552,
+        "height": 27432,
+        "texts": []
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 1024128,
+        "width": 11274552,
+        "height": 1554272,
+        "texts": [
+          {
+            "text": "The Portfolio Tracker is the personalised workspace available to authenticated users.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "It provides a real-time view of the user’s portfolio performance, current asset allocation, and historical NAV growth driven by the active strategy (PPO RL Agent or Merton Benchmark).",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "The tracker updates automatically after every market data refresh and rebalancing event, giving the investor a clear, data-driven picture of their financial position.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2578608,
+        "width": 4572000,
+        "height": 347472,
+        "texts": [
+          {
+            "text": "Key Features:",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2980944,
+        "width": 11274552,
+        "height": 2739211,
+        "texts": [
+          {
+            "text": "•  Summary bar displays Total Portfolio NAV (₹), Unrealised Daily P&L (₹ and %), Available Cash Balance, and Active Strategy Badge (PPO AI Agent or Merton Benchmark).",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Asset Allocation Donut Chart renders the current portfolio split across NASDAQ, NIFTY, and Cash as percentages, redrawn after every rebalancing event.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Cumulative NAV Line Chart plots portfolio growth from inception, with an optional overlay comparing the simultaneously-running alternative strategy (RL vs Merton).",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Holdings Table provides an itemised breakdown for each asset: current weight (%), market value (₹), daily return (%), and total contribution to portfolio P&L.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457073,
+        "top": 5720155,
+        "width": 11091672,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "⚙ Tech Stack:  Plotly (donut chart, NAV curve)  |  Pandas (NAV engine, P&L computation)  |  SQLite (trade ledger)",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 13,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Module 6 : Strategy Parameter Tuning Panel",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "AUTO_SHAPE (1)",
+        "left": 457200,
+        "top": 941832,
+        "width": 11274552,
+        "height": 27432,
+        "texts": []
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 1024128,
+        "width": 11274552,
+        "height": 1585049,
+        "texts": [
+          {
+            "text": "The Strategy Parameter Tuning Panel transforms Dynamic Portfolio Rebalancing using Reinforcement Learning from a fixed model into an interactive simulation workbench.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "Users can adjust key financial and RL parameters through intuitive sliders and dropdowns, then immediately re-run the strategy to observe how changes affect portfolio performance - all without touching any code.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "This makes the platform valuable as both an educational tool and a practical research environment.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2578608,
+        "width": 4572000,
+        "height": 347472,
+        "texts": [
+          {
+            "text": "Key Features:",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2980944,
+        "width": 11274552,
+        "height": 2739211,
+        "texts": [
+          {
+            "text": "•  Risk Aversion slider (γ: 1-10) controls the Merton model’s conservatism; lower γ produces higher equity allocation, higher γ shifts weight toward cash.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Transaction Cost Rate slider (0.0% - 0.5%) adjusts the per-rebalance cost applied to both strategies, enabling sensitivity analysis on turnover efficiency.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Risk-Free Rate (rf) dropdown (5% - 8% p.a.) updates the Sharpe ratio baseline and Merton weight formula, reflecting different prevailing interest rate environments.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "•  Dual Execution Modes: Autonomous PPO (full auto-pilot - agent rebalances without asking) and Advisory Mode (AI recommends weights - user reviews and approves before execution).",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 5720155,
+        "width": 11091672,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "⚙ Tech Stack:  Streamlit (sliders + dropdowns)  |  PPO re-inference (Stable-Baselines3)  |  Plotly (live chart update)",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 14,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Example Workflow",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 534924,
+        "top": 770989,
+        "width": 11274552,
+        "height": 646331,
+        "texts": [
+          {
+            "text": "Scenario: An investor logs into Dynamic Portfolio Rebalancing using Reinforcement Learning on a high-volatility day (NIFTY -2.1%, NASDAQ -1.8%).",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 1399032,
+        "width": 11274552,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "•  Step 1: Interactive Web Dashboard",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 1746504,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "The investor opens the dashboard. The Volatility Regime Badge flashes \"⚠ HIGH STRESS\".",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 2112264,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "The NASDAQ drawdown chart shows - 8.3% from the 60-day peak. EMA 20 is below EMA 60 - bearish signal.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2642616,
+        "width": 11274552,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "•  Step 2: User Login & Authentication",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 2990088,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "The investor logs in. bcrypt verifies the hashed password; a signed JWT is issued.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 3355848,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "Server routes the investor to their Portfolio Tracker workspace. Current NAV: ₹3,12,500 (PPO Agent active).",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 3886200,
+        "width": 11274552,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "•  Step 3: Live Market Data Integration",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 4233672,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "yfinance pulls latest NIFTY (^NSEI) and NASDAQ-100 (^NDX) daily closing prices.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 4599432,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "All 13 state features are computed in-memory. The RL state vector is assembled and passed to PPO.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 15,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Example Workflow",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 960120,
+        "width": 11274552,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "•  Step 4: RL Working Process",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 1307592,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "PPO agent receives the 13-feature state (high vol regime, negative rolling Sharpe).",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 1673352,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "Softmax output: NASDAQ 15%  |  NIFTY 10%  |  Cash 75%  - heavy cash for capital preservation.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 2203704,
+        "width": 11274552,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "•  Step 5: Portfolio Tracker",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 2551176,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "NAV updates to ₹3,09,875 (−0.84%). Donut chart redraws: 75% Cash, 15% NASDAQ, 10% NIFTY.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 2916936,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "Daily P&L: −₹2,625. RL agent preserved ₹3,625 vs. an equal-weight all-equity portfolio.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 3447288,
+        "width": 11274552,
+        "height": 320040,
+        "texts": [
+          {
+            "text": "•  Step 6: Strategy Parameter Tuning Panel",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 3794760,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "Investor slides γ: 5 → 2 (Aggressive). PPO re-infers: NASDAQ 40%, NIFTY 25%, Cash 35%.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 777240,
+        "top": 4160520,
+        "width": 10789920,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "Advisory Mode popup: 'AI recommends rebalancing - Approve or Dismiss?' Investor approves.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slide": 16,
+    "shapes": [
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 201168,
+        "width": 11274552,
+        "height": 685800,
+        "texts": [
+          {
+            "text": "Example Workflow",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 960120,
+        "width": 11274552,
+        "height": 365760,
+        "texts": [
+          {
+            "text": "Outcome & System Value",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      },
+      {
+        "type": "TEXT_BOX (17)",
+        "left": 457200,
+        "top": 1389888,
+        "width": 11274552,
+        "height": 2610971,
+        "texts": [
+          {
+            "text": "❖Portfolio is rebalanced instantly with 0.1% transaction cost deducted. The trade is logged with timestamp, weights applied, and cost incurred.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "❖Merton model (γ=5) allocates NASDAQ 28%, NIFTY 22%, Cash 50% - less defensive than RL. RL’s cash-heavy posture yields a 37% lower drawdown than Merton on this crisis day.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          },
+          {
+            "text": "❖End-of-day: RL NAV ₹3,09,875  vs  Merton NAV ₹3,07,100 - RL outperforms by ₹2,775 through superior regime detection.",
+            "level": 0,
+            "font_size": null,
+            "bold": null
+          }
+        ]
+      }
+    ]
+  }
+]

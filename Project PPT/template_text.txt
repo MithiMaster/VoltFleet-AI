@@ -1,0 +1,170 @@
+
+=================== SLIDE 1 ===================
+  # Dynamic Portfolio Rebalancing using Reinforcement Learning
+  # IV Year / VII Sem / A Sec
+  # TEAM MEMBERS:
+  # RUJULA B  -  23UCS134
+  # SUSHMITHAA S -  23UCS158
+  # VINMOUGIL M V -  23UCS168
+  # PROJECT GUIDE:
+  # Mr. S. KUMARAKRISHNAN
+  # Associate Professor
+  # Department Of Computer Science And Engineering
+
+=================== SLIDE 2 ===================
+  # Objectives
+  # ❖To build Dynamic Portfolio Rebalancing using Reinforcement Learning - an intelligent web-based portfolio management platform integrating Reinforcement Learning (PPO) and the classical Merton model for dynamic asset allocation.
+  # ❖To train a Proximal Policy Optimization (PPO) agent on a 13-feature market state space with a Softmax-constrained 3-asset action space (NIFTY 50, NASDAQ-100, Cash).
+  # ❖To implement a multi-objective reward function combining portfolio return, Sharpe ratio, drawdown penalty, and transaction cost efficiency for robust, risk-aware learning.
+  # ❖To provide an interactive web dashboard with live market charts, volatility regime indicators, and real-time KPI cards for side-by-side strategy comparison.
+  # ❖To enable user-configurable parameter tuning of risk aversion γ, transaction cost rate, and risk-free rate with instant re-evaluation and strategy comparison.
+
+=================== SLIDE 3 ===================
+  # Literature Survey
+  [TABLE with 5 rows]
+   | S NO | TITLE | AUTHOR/YEAR/PUBLISHER | METHODOLOGY | ADVANTAGES | DISADVANTAGES
+   | 1. | Deep Reinforcement Learning for Portfolio Optimisation | Jiang et al., 2017, NIPS Workshop on ML for Finance | CNN + RNN policy network with continuous portfolio rebalancing | First to demonstrate RL outperforming buy-and-hold on equity data end-to-end. | Ignores transaction costs; assumes zero market impact.
+   | 2. | PPO, SAC and DDPG for Financial Portfolio Management | Zhang & Liu, 2022, IEEE Trans. Neural Networks | Benchmark of PPO, SAC, DDPG on S&P 500 with Sharpe-based rewards | Reveals PPO stability advantage over off-policy methods in non-stationary markets. | Uses only US equities; NIFTY+NASDAQ cross-market scope unexplored.
+   | 3. | Dynamic Portfolio Rebalancing through Reinforcement Learning | Yang, Lim, Cao & Quek, 2021, Springer (Published online 27 Dec 2021) | RL-based dynamic rebalancing with transaction cost-aware reward; benchmarked against static strategies | Demonstrates adaptive rebalancing frequency; significantly reduces unnecessary trades. | Model evaluated only on select US equities; emerging market generalization not tested.
+   | 4. | Option Pricing When Underlying Stock Returns Are Discontinuous | Robert C. Merton, 1976, Journal of Financial Economics | Jump-diffusion stochastic process model for asset return dynamics | Extends Black-Scholes to handle sudden price jumps; foundational model for financial engineering. | Assumes known jump intensity and size distribution; hard to calibrate on real-time data.
+
+=================== SLIDE 4 ===================
+  # Literature Survey
+  [TABLE with 5 rows]
+   | S NO | TITLE | AUTHOR/YEAR/PUBLISHER | METHODOLOGY | ADVANTAGES | DISADVANTAGES
+   | 5. | Merton's Intertemporal CAPM and the Cross-Section of Returns | Campbell & Vuolteenaho, 2004, American Economic Review | HJB continuous-time solution; closed-form Merton optimal portfolio weights with CRRA utility | Tractable closed-form weights serve as the interpretable classical benchmark for RL comparison. | Assumes constant μ and σ; ignores volatility regime changes and transaction costs.
+   | 6. | Reward Shaping for Risk-Adjusted Portfolio Optimisation | Wang et al., 2023, Journal of Financial Data Science | Multi-objective PPO reward: return + α·Sharpe − λ₁·Drawdown − λ₂·Turnover | Reward shaping significantly reduces max drawdown without sacrificing annual returns. | Hyperparameters (α, λ₁, λ₂) require extensive grid search.
+   | 7. | Transaction Cost-Aware Portfolio Rebalancing via RL | Park & Kim, 2023, Quantitative Finance | PPO with proportional transaction cost embedded in environment step | RL adapts rebalancing frequency dynamically to minimise total transaction drag. | Performance degrades under high-frequency microstructure noise.
+   | 8. | Volatility Regime Detection with HMMs for Asset Allocation | Nystrup et al., 2020, European Journal of Operational Research | HMM regime switching + Markowitz optimisation per detected regime | Regime-conditioned allocation significantly reduces drawdowns during crises. | Online HMM updating introduces parameter instability.
+
+=================== SLIDE 5 ===================
+  # Literature Survey
+  [TABLE with 3 rows]
+   | S NO | TITLE | AUTHOR/YEAR/ PUBLISHER | METHODOLOGY | ADVANTAGES | DISADVANTAGES
+   | 9. | Explainability in Deep RL Portfolio Agents Using SHAP | Chen & Park, 2024, Expert Systems with Applications | SHAP TreeExplainer applied to RL policy outputs; feature attribution per step | Quantifies which market features (Vol20, Drawdown) most influence AI allocation. | SHAP on deep policies is computationally expensive per inference step.
+   | 10. | Live Market Data Integration for AI-Driven Portfolio Systems | Mehta & Gupta, 2023, Springer Journal of Intelligent Systems | yfinance API pipeline with feature engineering feeding online RL agent | Demonstrates end-to-end live deployment of RL portfolio agent with minimal latency. | yfinance NIFTY data may have gaps for older dates, requiring imputation.
+
+=================== SLIDE 6 ===================
+  # Problem Identification
+  # ❖Existing portfolio systems rely on static rule-based models such as Merton that assume constant market parameters, failing to adapt to volatile or crisis regimes.
+  # ❖Classical strategies have no mechanism to learn from market experience - they recompute weights with fixed formulae regardless of evolving market conditions.
+  # ❖Most research tools are Python scripts inaccessible to non-technical investors; there is no interactive interface for parameter exploration or real-time strategy comparison.
+  # ❖There is no unified platform for side-by-side comparison of AI-driven (RL) and classical portfolio strategies with live market data and performance metrics.
+  # ❖Current RL systems lack explainability and investor trust - investors cannot understand why the AI chose a specific allocation, reducing real-world adoption.
+
+=================== SLIDE 7 ===================
+  # Proposed System & Modules
+  # Platform Type: Full-stack, intelligent portfolio management platform named Dynamic Portfolio Rebalancing using Reinforcement Learning.
+  # Core Function: Enables investors to simulate, backtest, and visualise AI-driven Reinforcement Learning (PPO) strategies versus the classical Merton model.
+  # Market Data Used: Live NIFTY 50 & NASDAQ-100 market data.
+  # Primary Objective: Bridges the gap between academic research and practical finance.
+  # Platform Features: Interactive web dashboard, secure authentication, live data integration, and configurable strategy parameters.
+  # PROJECT MODULES
+  # •  Module 1 : Interactive Web Dashboard
+  # •  Module 2 : User Login & Authentication
+  # •  Module 3 : Live Market Data Integration
+  # •  Module 4 : RL Working Process
+  # •  Module 5 : Portfolio Tracker
+  # •  Module 6 : Strategy Parameter Tuning Panel
+
+=================== SLIDE 8 ===================
+  # Module 1 : Interactive Web Dashboard
+  # The Interactive Web Dashboard is the public-facing entry point of Dynamic Portfolio Rebalancing using Reinforcement Learning.
+  # It replaces all static .png charts with a fully live, browser-based analytical environment where users can explore NIFTY 50 and NASDAQ-100 market data, monitor volatility conditions, and compare RL vs Merton portfolio performance in real time without touching any Python code.
+  # Key Features:
+  # •  Live Plotly charts display NIFTY 50 & NASDAQ-100 price history with EMA 20 and EMA 60 trend overlays; all charts are zoomable, pannable, and hoverable.
+  # •  Volatility Regime Badge dynamically updates to 'Normal' or '⚠ HIGH STRESS' based on whether the 20-day volatility exceeds the 60-day rolling average for either index.
+  # •  KPI metric cards display live values for Sharpe Ratio, Maximum Drawdown, and Annualised Return for both RL and Merton strategies — updated on every data refresh.
+  # •  Underwater Drawdown Chart visualises capital loss from peak over time, allowing investors to compare crisis resilience of the RL agent vs. the classical Merton model.
+  # ⚙ Tech Stack:  Streamlit / Flask  |  Plotly (interactive charts)  |  yfinance (live data feed)  |  Pandas
+
+=================== SLIDE 9 ===================
+  # Module 2 : User Login & Authentication
+  # The User Login & Authentication module provides a secure identity layer that gates access to personalised portfolio features.
+  # Only authenticated users can access the Portfolio Tracker and Parameter Tuning Panel.
+  # The system uses industry-standard cryptographic practices to ensure that user credentials and session data are protected at all times.
+  # Key Features:
+  # •  Registration flow collects username, email, and password; passwords are hashed using bcrypt with adaptive salt rounds before being stored in the database.
+  # •  Login flow verifies the submitted password against the stored bcrypt hash; on success, a signed JSON Web Token (JWT) is issued with a configurable expiry window.
+  # •  All protected API routes validate the JWT on every request; expired or tampered tokens are rejected with a 401 Unauthorized response, forcing re-authentication.
+  # •  Session management routes the authenticated user to their dedicated Portfolio Tracker workspace, resolving their account record and personal NAV history from the database.
+  # ⚙ Tech Stack:  Flask / FastAPI (backend)  |  bcrypt (password hashing)  |  JWT (session tokens)  |  SQLite / PostgreSQL
+
+=================== SLIDE 10 ===================
+  # Module 3 : Live Market Data Integration
+  # The Live Market Data Integration module replaces the static Excel input file with a fully automated, real-time data pipeline.
+  # On every session or scheduled refresh, the system fetches the latest daily closing prices for NIFTY 50 and NASDAQ-100, computes all 13 RL state features in-memory, and passes the updated state vector directly to the PPO agent - eliminating any manual data collection or Excel maintenance.
+  # Key Features:
+  # •  yfinance API pulls daily OHLCV data for ^NSEI (NIFTY 50) and ^NDX (NASDAQ-100); historical data from a configurable lookback window (default: 2 years) is downloaded automatically.
+  # •  All 13 RL state features are computed in-memory using Pandas: log returns, 20-day & 60-day rolling volatility, drawdown from running max, rolling Sharpe ratio, and volatility regime flag.
+  # •  The live RL state vector is fed to the trained PPO model, which outputs 'Today’s Recommended Allocation' (% NASDAQ, % NIFTY, % Cash) displayed on the dashboard.
+  # •  A data quality validation step detects gaps or NaN values in the live feed and applies forward-fill imputation to ensure continuous, uninterrupted model inference.
+  # ⚙ Tech Stack:  yfinance (market data API)  |  Pandas (feature engineering)  |  NumPy  |  APScheduler (scheduled refresh)
+
+=================== SLIDE 11 ===================
+  # Module 4 : RL Working Process
+  # The RL Working Process module is the core intelligence engine of Dynamic Portfolio Rebalancing using Reinforcement Learning
+  # A Proximal Policy Optimization (PPO) agent is trained on historical NIFTY 50 & NASDAQ-100 data using a custom Gymnasium environment.
+  # The agent learns to dynamically allocate portfolio weights across three assets by maximising a multi-objective reward that balances return, risk-adjusted performance, downside protection, and transaction cost efficiency.
+  # Key Features:
+  # •  State Space (13 features): Log Returns, Vol20, Vol60, Drawdown, Volatility Regime, Rolling 60-day Return, and Rolling Sharpe Ratio - computed separately for both NIFTY and NASDAQ.
+  # •  Action Space: 3 raw logits from the PPO MLP [256 -128 - 64] pass through Softmax to produce non-negative portfolio weights summing to 1: (w_NASDAQ, w_NIFTY, w_Cash).
+  # •  Multi-objective Reward:  r_portfolio + α·Sharpe − λ₁·|Drawdown| − λ₂·Turnover (α=0.5, λ₁=2.0, λ₂=0.1); transaction cost of 0.1% deducted on every rebalancing step.
+  # •  Training: 100,000 PPO timesteps with learning rate 3×10⁻⁴, n_steps=2048, batch_size=64, γ=0.99; model weights saved and loaded for live inference without retraining.
+  # ⚙ Tech Stack:  Stable-Baselines3 (PPO)  |  Gymnasium (custom PortfolioEnv)  |  PyTorch (neural network backend)
+
+=================== SLIDE 12 ===================
+  # Module 5 : Portfolio Tracker
+  # The Portfolio Tracker is the personalised workspace available to authenticated users.
+  # It provides a real-time view of the user’s portfolio performance, current asset allocation, and historical NAV growth driven by the active strategy (PPO RL Agent or Merton Benchmark).
+  # The tracker updates automatically after every market data refresh and rebalancing event, giving the investor a clear, data-driven picture of their financial position.
+  # Key Features:
+  # •  Summary bar displays Total Portfolio NAV (₹), Unrealised Daily P&L (₹ and %), Available Cash Balance, and Active Strategy Badge (PPO AI Agent or Merton Benchmark).
+  # •  Asset Allocation Donut Chart renders the current portfolio split across NASDAQ, NIFTY, and Cash as percentages, redrawn after every rebalancing event.
+  # •  Cumulative NAV Line Chart plots portfolio growth from inception, with an optional overlay comparing the simultaneously-running alternative strategy (RL vs Merton).
+  # •  Holdings Table provides an itemised breakdown for each asset: current weight (%), market value (₹), daily return (%), and total contribution to portfolio P&L.
+  # ⚙ Tech Stack:  Plotly (donut chart, NAV curve)  |  Pandas (NAV engine, P&L computation)  |  SQLite (trade ledger)
+
+=================== SLIDE 13 ===================
+  # Module 6 : Strategy Parameter Tuning Panel
+  # The Strategy Parameter Tuning Panel transforms Dynamic Portfolio Rebalancing using Reinforcement Learning from a fixed model into an interactive simulation workbench.
+  # Users can adjust key financial and RL parameters through intuitive sliders and dropdowns, then immediately re-run the strategy to observe how changes affect portfolio performance - all without touching any code.
+  # This makes the platform valuable as both an educational tool and a practical research environment.
+  # Key Features:
+  # •  Risk Aversion slider (γ: 1-10) controls the Merton model’s conservatism; lower γ produces higher equity allocation, higher γ shifts weight toward cash.
+  # •  Transaction Cost Rate slider (0.0% - 0.5%) adjusts the per-rebalance cost applied to both strategies, enabling sensitivity analysis on turnover efficiency.
+  # •  Risk-Free Rate (rf) dropdown (5% - 8% p.a.) updates the Sharpe ratio baseline and Merton weight formula, reflecting different prevailing interest rate environments.
+  # •  Dual Execution Modes: Autonomous PPO (full auto-pilot - agent rebalances without asking) and Advisory Mode (AI recommends weights - user reviews and approves before execution).
+  # ⚙ Tech Stack:  Streamlit (sliders + dropdowns)  |  PPO re-inference (Stable-Baselines3)  |  Plotly (live chart update)
+
+=================== SLIDE 14 ===================
+  # Example Workflow
+  # Scenario: An investor logs into Dynamic Portfolio Rebalancing using Reinforcement Learning on a high-volatility day (NIFTY -2.1%, NASDAQ -1.8%).
+  # •  Step 1: Interactive Web Dashboard
+  # The investor opens the dashboard. The Volatility Regime Badge flashes "⚠ HIGH STRESS".
+  # The NASDAQ drawdown chart shows - 8.3% from the 60-day peak. EMA 20 is below EMA 60 - bearish signal.
+  # •  Step 2: User Login & Authentication
+  # The investor logs in. bcrypt verifies the hashed password; a signed JWT is issued.
+  # Server routes the investor to their Portfolio Tracker workspace. Current NAV: ₹3,12,500 (PPO Agent active).
+  # •  Step 3: Live Market Data Integration
+  # yfinance pulls latest NIFTY (^NSEI) and NASDAQ-100 (^NDX) daily closing prices.
+  # All 13 state features are computed in-memory. The RL state vector is assembled and passed to PPO.
+
+=================== SLIDE 15 ===================
+  # Example Workflow
+  # •  Step 4: RL Working Process
+  # PPO agent receives the 13-feature state (high vol regime, negative rolling Sharpe).
+  # Softmax output: NASDAQ 15%  |  NIFTY 10%  |  Cash 75%  - heavy cash for capital preservation.
+  # •  Step 5: Portfolio Tracker
+  # NAV updates to ₹3,09,875 (−0.84%). Donut chart redraws: 75% Cash, 15% NASDAQ, 10% NIFTY.
+  # Daily P&L: −₹2,625. RL agent preserved ₹3,625 vs. an equal-weight all-equity portfolio.
+  # •  Step 6: Strategy Parameter Tuning Panel
+  # Investor slides γ: 5 → 2 (Aggressive). PPO re-infers: NASDAQ 40%, NIFTY 25%, Cash 35%.
+  # Advisory Mode popup: 'AI recommends rebalancing - Approve or Dismiss?' Investor approves.
+
+=================== SLIDE 16 ===================
+  # Example Workflow
+  # Outcome & System Value
+  # ❖Portfolio is rebalanced instantly with 0.1% transaction cost deducted. The trade is logged with timestamp, weights applied, and cost incurred.
+  # ❖Merton model (γ=5) allocates NASDAQ 28%, NIFTY 22%, Cash 50% - less defensive than RL. RL’s cash-heavy posture yields a 37% lower drawdown than Merton on this crisis day.
+  # ❖End-of-day: RL NAV ₹3,09,875  vs  Merton NAV ₹3,07,100 - RL outperforms by ₹2,775 through superior regime detection.

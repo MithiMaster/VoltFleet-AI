@@ -1,0 +1,12 @@
+Driver,Email,License,Trips,Distance (km),Energy (kWh),Efficiency (km/kWh),Overspeeding Events,Revenue ($)
+Maya Chen,maya@voltgrid.com,DL-112233,582,46026.3,9061.5,5.08,5035,94772.6
+Robin Lee,robin@voltgrid.com,DL-223344,585,42171.3,8494.0,4.96,5265,86007.4
+Jordan Park,jordan@voltgrid.com,DL-445566,576,43522.6,8891.9,4.89,5140,97911.44
+Diego Alvarez,diego@voltgrid.com,DL-001122,566,41797.8,8144.8,5.13,4955,90370.27
+Taylor Vance,taylor@voltgrid.com,DL-990011,614,45465.2,8846.3,5.14,5435,95815.75
+Alex Carter,alex@voltgrid.com,DL-556677,553,42037.6,8255.1,5.09,4713,88787.4
+Morgan Smith,morgan@voltgrid.com,DL-667788,573,42802.8,8725.4,4.91,5308,92205.68
+Sam Rivera,sam@voltgrid.com,DL-778899,573,44269.1,8894.1,4.98,5124,95961.34
+Priya Shah,priya@voltgrid.com,DL-889900,588,50219.2,9965.8,5.04,5389,107038.09
+Casey Morgan,casey@voltgrid.com,DL-334455,648,48879.1,9216.7,5.3,5796,102120.48
+Cheng  Chan,ak1234@gmail.com,DL-66394790,61,183.1,1075.7,0.17,152,358.87

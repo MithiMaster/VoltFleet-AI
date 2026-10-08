@@ -1,0 +1,147 @@
+================================================================================
+                     VOLTFLEET AI - PROJECT EXECUTION GUIDE
+================================================================================
+
+1. GITHUB REPOSITORY LINK
+--------------------------------------------------------------------------------
+GitHub Repository: https://github.com/MithiMaster/VoltFleet-AI.git
+Project Name     : VoltFleet AI (Intelligent EV Fleet Management Platform)
+Author / Account : MithiMaster
+
+
+2. SYSTEM REQUIREMENTS & PREREQUISITES
+--------------------------------------------------------------------------------
+Before starting, ensure you have the following installed on your machine:
+
+1. Python 3.10 or higher
+   - Verify with: python --version
+2. Node.js 18.x or higher & npm
+   - Verify with: node -v && npm -v
+3. Git
+   - Verify with: git --version
+
+
+3. HOW TO CLONE THE PROJECT
+--------------------------------------------------------------------------------
+Open a terminal / command prompt and run:
+
+   git clone https://github.com/MithiMaster/VoltFleet-AI.git
+   cd VoltFleet-AI
+
+
+4. BACKEND SETUP & EXECUTION (FastAPI Server)
+--------------------------------------------------------------------------------
+The backend is powered by FastAPI, SQLAlchemy, and Scikit-Learn.
+It comes with automatic SQLite database configuration and automatic seeding.
+
+Step 4.1: Open a terminal in the project root directory:
+   cd VoltFleet-AI
+
+Step 4.2: Create and activate a Python virtual environment:
+   - On Windows (PowerShell):
+       python -m venv venv
+       .\venv\Scripts\Activate.ps1
+
+   - On Windows (CMD):
+       python -m venv venv
+       venv\Scripts\activate.bat
+
+   - On Linux / macOS:
+       python3 -m venv venv
+       source venv/bin/activate
+
+Step 4.3: Install required Python dependencies:
+   pip install -r backend/requirements.txt
+
+Step 4.4: Prepare the environment file:
+   - On Windows (PowerShell):
+       Copy-Item backend\.env.example backend\.env
+
+   - On Linux / macOS:
+       cp backend/.env.example backend/.env
+
+   Note: By default, the application runs using SQLite (zero setup required).
+   Upon the first run, the database automatically tables and seeds 10 vehicles,
+   10 drivers, hubs, and telematics from 'unified_ev_fleet_dataset_final.xlsx'.
+
+Step 4.5: Run the backend FastAPI server:
+   uvicorn backend.main:app --reload --port 8000
+
+The backend will start at:
+   - API Server URL    : http://localhost:8000
+   - Interactive Docs  : http://localhost:8000/docs
+   - Alternative Docs  : http://localhost:8000/redoc
+
+
+5. FRONTEND SETUP & EXECUTION (React + Vite + Tailwind CSS)
+--------------------------------------------------------------------------------
+The frontend dashboard is built with React 19, TypeScript, TanStack Router,
+and Tailwind CSS.
+
+Step 5.1: Open a new separate terminal window and navigate to the frontend directory:
+   cd VoltFleet-AI/frontend
+
+Step 5.2: Install npm dependencies:
+   npm install
+
+Step 5.3: Start the Vite development server:
+   npm run dev
+
+Step 5.4: Open your web browser and navigate to:
+   http://localhost:8080/
+   (or the local port displayed in your terminal, e.g. http://localhost:5173/)
+
+
+6. DEFAULT LOGIN CREDENTIALS
+--------------------------------------------------------------------------------
+You can log in directly using the pre-seeded account:
+
+   Role     : Fleet Manager (Admin)
+   Email    : you@fleet.com
+   Password : password
+
+Alternative driver accounts (pre-seeded):
+   - maya@voltgrid.com
+   - diego@voltgrid.com
+   - jordan@voltgrid.com
+
+
+7. MACHINE LEARNING MODEL TRAINING (OPTIONAL)
+--------------------------------------------------------------------------------
+VoltFleet AI includes pre-trained machine learning models:
+  - 'range_model.pkl'       : Random Forest Regressor for Remaining EV Range
+  - 'performance_model.pkl' : Driver safety and eco-behavior scoring
+
+If you wish to re-train or fine-tune the range prediction model from scratch
+using the real-world telematics dataset:
+   python train_range_model.py
+
+
+8. PROJECT ARCHITECTURE & PORT MAPPINGS
+--------------------------------------------------------------------------------
+  Service            Port       URL
+  -----------------  ---------  ---------------------------------------------
+  FastAPI Backend    8000       http://localhost:8000
+  Swagger Docs       8000       http://localhost:8000/docs
+  Frontend Web App   8080/5173  http://localhost:8080
+  Telemetry Engine   (bg thread) Real-time simulator updates telemetry every 10s
+
+
+9. TROUBLESHOOTING & COMMON ISSUES
+--------------------------------------------------------------------------------
+Q1: Port 8000 is already in use:
+    Run the backend on an alternate port:
+    uvicorn backend.main:app --reload --port 8001
+
+Q2: Database schema update / Fresh start:
+    To reset and re-seed the SQLite database:
+    python backend/reset_db.py
+    Then restart the backend server.
+
+Q3: Frontend cannot reach backend:
+    Ensure the backend server is running in its terminal on port 8000
+    before navigating through the frontend dashboard.
+
+================================================================================
+            THANK YOU FOR USING VOLTFLEET AI FLEET MANAGEMENT PLATFORM
+================================================================================

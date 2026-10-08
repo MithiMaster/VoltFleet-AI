@@ -1,0 +1,88 @@
+# ==========================================
+# VoltFleet AI - Git Ignore Rules
+# ==========================================
+
+# Environment variables & secrets
+.env
+*.env
+**/.env
+!.env.example
+!**/.env.example
+
+# Node dependencies & build outputs
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+.output/
+.vinxi/
+.nitro/
+.tanstack/
+frontend/.tanstack/
+.lovable/
+*.local
+
+# Python artifacts
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+# Python environment
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+!frontend/src/lib/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+backend/voltgrid.db
+
+# Backup archive and temporary files
+frontend.zip
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Temporary test outputs
+test_out.docx
+test_appendix_doc.*
+test_appendix_perfect.*
+page_*.png
+perf_page_*.png
+final_page_*.png
+
+# Local tool artifacts
+.agent/
+graphify-out/
+
+# IDE and OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
